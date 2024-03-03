@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .demo {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-bottom: 60px ;
+        }
+
+        .demo1 {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            margin-top: 40px;
+        }*/
+
+/* #1. styling the child. */
+        *{
+            /* to not let the 'height' and 'width' of the box to change while changing the padding of the 'content'. */
+            box-sizing: border-box;
+        }
+        .demo{
+            height: 100px;
+            width: 100px;
+            background-color:blue;
+            /* margin: 0px 10px 10px 0px; */
+            margin: auto;
+            /* padding-top: 20px;
+            padding-left: 60px; */
+            padding-left: 70px;
+            
+
+        }
+        .demo1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            padding-top: 0px;
+        }
+
+/* #2. styling the parent. */
+
+        .container{
+            display: flex;
+        }
+/* #3. styling apart from parent and child. */
+
+        .demo2{
+            height: 100px;
+            width: 100px;
+            background-color:pink;
+            /* margin: auto; */
+            
+        }
+    </style> 
+</head>
+
+<body>
+    <!--  <div class="demo"></div>
+    <div class="demo1"></div>  -->
+    <!-- # 1.parent and child relationship.(here the 'container' is parent and 'demos are child') -->
+    <div class="container">
+        <div class="demo">hello</div>
+        <div class="demo1"></div>
+    </div>
+    <div class="demo2"></div>
+</body>
+
+</html>

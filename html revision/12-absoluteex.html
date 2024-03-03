@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            background-color: red;
+            height: 400px;
+            width: 500px;
+            position: relative;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            transition: 3s ;
+        }
+        .left{
+            position: absolute;
+            top: 50%;
+            left: 10px;
+
+        }
+        .right{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            
+        }
+        .container:hover img{
+            transform: scale(1.6);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.britannica.com/68/178668-050-DA998E6C/Durbar-Square-heart-district-Kathmandu-earthquake-Nepal-April-25-2015.jpg" alt="">
+        <button class="left">> </button>
+        <button class="right">></button>
+    </div>
+</body>
+</html>

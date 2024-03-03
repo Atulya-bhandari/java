@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;
+        margin: 0;
+        padding: 0;}
+        .navbar{
+            height: 100px;
+            background-color: pink;
+            position: sticky;/* top ,right ,botton ,left */
+            top: 0px;
+            
+        }
+        .header{
+            height: 200px;
+            background-color: red;
+            position: sticky;/* top ,right ,botton ,left */
+            top: 100px;
+        }
+        .content{
+            height: 300vh;
+            background-color: aqua;
+            
+        }
+        .footer{
+            height: 10vh;
+            background-color: bisque;
+        }
+       .btn{
+        height: 50px;
+        width: 200px;
+        position: fixed;/*Element always stays in the same place even if the page is scrolled.*/
+        bottom: 20px;
+        right: 50%;
+       }
+        /* vh = vertical height eg:100vh=1000px */
+
+    </style>
+</head>
+<body>
+    <div class="navbar">NAVBAR</div>
+    <div class="header">HEADER</div>
+    <div class="content">CONTENT</div>
+    <div class="footer">FOOTER</div>
+    <button class="btn" >click me</button>
+</body>
+</html>
