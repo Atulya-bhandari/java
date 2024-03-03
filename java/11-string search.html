@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        text='welcome to dursikshya to read To programming language'
+        document.write(text, '<br>')
+
+
+        /*
+        1. .indexOf()
+        */
+
+        document.write(`${text.indexOf('to')} .1<br>`)
+        document.write(`${text.indexOf('to',15)} .1<br>`)
+
+        /*
+        2. .lastIndexOf()
+        */
+        document.write(`${text.lastIndexOf('to')} .2<br>`)
+
+         /*
+        3. .search()
+        */
+
+        document.write(`${text.search('read')} .3<br>`)
+        document.write(`${text.search(/dursikshya/)} .3 <br>`)
+
+
+
+        /*
+        4. .match()
+        */
+        test='The rain in SPAIN  stays mainly in the plain'
+        document.write(`${test.match('ain')} .4 <br>`)
+        document.write(`${test.match(/ain/gi)} .4 <br>`)
+
+
+       /*
+        5. matchAll.()
+        */
+        document.write(`${test.matchAll(/rain/g)} .5 <br>`)
+
+
+
+       /*
+        6. .includes.()
+        */
+        document.write(`${test.includes('rain')} .6<br>`)
+
+
+       /*
+        7. .startsWith.()
+        */
+        document.write(`${test.startsWith('The',5)} .7<br>`)
+
+
+        /*
+        8. .endsWith.()
+        */
+       document.write(`${text.endsWith('The')} .8<br>`)
+
+
+        /*
+         #. NumberMethod
+            1. .toString()
+        */
+            x=20
+            y=toString(x)
+        document.write(`${typeof(x)} .9<br>`)
+        document.write(`${typeof(y)} .9<br>`)
+
+            
+        /*
+        10. toFixed.()
+        */
+        z=23.63453
+        document.write(`${z.toFixed(2)} .10<br>`)
+
+        /*
+        11. .toPrecision.()
+        */
+        document.write(`${z.toPrecision(2)} .11<br>`)
+
+
+      
+    </script>
+</body>
+</html>

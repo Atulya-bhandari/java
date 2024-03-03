@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // conditional statement - used for making decissions
+        /*
+        1. if statement
+        - if (condition)(statement if condition is true)
+        - else(satement)
+
+        4. nested conditional statement
+        - if (condition)
+                if(condition)
+
+        5. switch case
+        - switch(key){
+            casefirst:
+                statement if key ==value1
+            casesecond
+                statement if key ==value2
+            casethird
+                statement if key == value3
+                ......
+                default;
+                statement if key doesnt exists
+
+
+
+        }
+
+
+        */
+
+        // let a= Number(prompt('enter your age; '))
+        // if (a>=18)
+        // (document.write('you are eligible to vote'))
+        // else
+        // (document.write('you are not eligible to vote'))
+
+        // 1.check even or odd number
+
+        // let a= Number(prompt('enter a number; '))
+        // if (a%2==0) (document.write(`${a} is even number`))
+        // else (document.write(`${a} is not even number`))
+
+        // 2.check positive and negative nnumber.
+
+        // a=Number(prompt('enter a number; '))
+        // if (a<0)(document.write(`${a} ,this number is negative`))
+        // else if (a>0)(document.write(`${a} this number is positive`))
+        // else(document.write(`${a}, the number is ZERO`))
+
+        // 3.CHECK THE GREATEST NUMBER AMONG 3.
+
+        // a=Number(prompt('enter a number; '))
+        // b=Number(prompt('enter a number; '))
+        // c=Number(prompt('enter a number; '))
+
+        // if (a>b&&b>c)(document.write(`${a},a is the largest`))
+        // else if(b>a&&b>c)(document.write(`${b},b is the largest`))
+        // else(document.write(`${c},c is the largest`))
+        // document.write(`<br> ${a},${b},${c}`)
+
+        // 4.
+
+        // a=Number(prompt('enter a number; '))
+        // b=Number(prompt('enter a number; '))
+        // c=Number(prompt('enter a number; '))
+        // if (a>b){if (a>c)(document.write(`${a}, a is the greatest`))}
+        // if (b>a){if (b>c) (document.write(`${b}, b is the greatest`))}
+        // else (document.write(`${b}, b is the greatest`)) 
+
+
+        // 5. display days name
+
+
+        // days={
+        //     '1':'sunday',
+        //     '2':'monday',
+        //     '3':'tuesday',
+        //     '4':'wednesday',
+        //     '5':'thursday',
+        //     '6':'friday',
+        //     '7':'saturday'
+        // }
+
+
+// 1.NORMAL WAY;
+        // a=Number(prompt('input enter a number; '))
+        // if (a==1) (document.write(`the day is sunday`))
+        // else if (a==2)(document.write(`the day is monday`))
+        // else if (a==3)(document.write(`the day is tuesday`))
+        // else if (a==4)(document.write(`the day is wednesday`))
+        // else if (a==5)(document.write(`the day is thursday`))
+        // else if (a==6)(document.write(`the day is friday`))
+        // else  if (a==7)(document.write(`the day is saturday`))
+        // else (document.write(`the day doesnt exists`))
+
+// SWITCH CASE;
+        // a= Number(prompt('enter a number(1-7): '))
+
+        // switch(a){
+        //     case 1:
+        //         document.write('sunday')
+        //         break
+        //     case 2:
+        //         document.write('monday')
+        //         break
+        //     case 3:
+        //         document.write('tuesday')
+        //         break
+        //     case 4:
+        //         document.write('wednesday')
+        //         break
+        //     case 5:
+        //         document.write('thursday')
+        //         break
+        //     case 6:
+        //         document.write('friday')
+        //         break
+        //     case 7:
+        //         document.write('saturday')
+        //         break
+        //     default:
+        //         document.write('invalid output')
+
+        // }
+
+    // calculator
+
+        x=Number(prompt('enter a number; '))
+        y=Number(prompt('enter a number; '))
+        operator=prompt('select operator; ')
+
+        switch(operator){
+            case '+':
+                document.write('addition, ',x+y)
+                break
+            case "-":
+                document.write('substraction, ',x-y)
+                break
+            case "%":
+                document.write('modulusc,',x%y)
+                break
+
+            default:document.write('invalid operator')
+        }
+
+        
+        
+
+
+        
+    </script>
+    
+</body>
+</html>

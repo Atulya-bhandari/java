@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        /*
+        - Array is a container to  multiple data.
+        - Values in an array is called an element.
+        - While accessing the single element from array , you must use indexing.
+        */
+
+        array=[1,2,3,'abc',{'name':'sudip','address':'ktm'},[1,2,3]]
+        document.write(array)
+        document.write(`<br> type of arr:`,typeof(array))
+        document.write ('<br>',array.length)
+        document.write('<br>',array[array.length-1])
+        document.write('<br>',array[4].name)
+
+        // 1.push(new_item)- to add new number in the end of array.
+            document.write('<br>')
+            array.push('Dursikshya')
+            document.write('<br>',array)
+
+            array.push('hello')
+            document.write('<br>',array)
+
+            //2. pop
+            array.pop()
+            document.write('<br>',array)
+
+
+        // unshift- to add new number in the first of array.
+            document.write('<br>',array)
+            array.unshift(10)
+            document.write('<br>',array)
+
+            array.unshift('atulya')
+            document.write('<br>',array)
+
+        // splice() - to remove or add one or more element from the array at specific position.
+            array.splice(5,0,'ram')
+            document.write('<br>',array)
+
+        // sort
+
+         // reverse
+        // array.reverse()
+        // document.write('<br>',array)
+
+        // slice(start,end)-creates new array using start index and end index excluding end.
+            arr2=array.slice(2,6)
+            document.write('<br>',arr2)
+
+            finalarr=array.concat(arr2)
+            document.write('<br>',finalarr)
+
+
+
+
+
+    </script>
+</body>
+</html>

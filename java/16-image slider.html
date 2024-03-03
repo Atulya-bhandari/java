@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 50vh;
+            margin: auto;
+            position: relative;
+        }
+
+        .container img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+        }
+
+        .container .btn{
+            position: absolute;
+            top: 50%;
+            border: none;
+            color: aqua;
+            font-size: 22px;
+
+        }
+
+        .container .left{
+            left: 0%;
+        }
+
+        .container .right{
+            right: 0%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <img src="img/dear.jpg" alt="slider image">
+        <button class="btn left" onclick="prev()">&lt;</button>
+        <button class="btn right" onclick="next()">&gt;</button>
+    </section>
+
+    
+
+    <script src="17- imgslide.js"></script>
+</body>
+</html>

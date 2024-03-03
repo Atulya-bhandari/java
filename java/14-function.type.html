@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function type</title>
+</head>
+<body>
+    <script>
+        /* 
+
+
+        functions:
+        1. no parameter no return:
+             function function_name(){
+                statements
+             }
+
+             function_name()
+
+        2. with parameter no retiurn.
+              function function_name(){
+                statements
+             }
+             function_name(argument)
+
+        3. function withoud parameter with returns.
+             function function_name(){
+                statements
+                return
+             }
+
+             reasult=function_name()
+
+        4. with parameter with return.
+             function function_name(){
+                statements
+                return
+             }
+            var= function_name(arguments)
+
+
+        5. Recursive function - function calls itself inside its body.
+        sum(5)->sum(4)->sum(3)->sum(2)->sum(1) =  15 ( eg : 5 - below.)
+
+    */
+
+            //  1.function add(){
+            //     let a=5
+            //     let b=6
+            //     document.write(`Sum = ${a+b}<br>`)
+
+            //  }
+
+            // const add=()=> {
+            //     let a=5
+            //     let b=6
+            //     document.write(`Sum = ${a+b}<br>`)
+
+            // }
+
+            //  add()
+
+            // 2.with argument no returns.
+                // function add(a,b){
+                //     document.write(`Sum = ${a+b}<br>`)
+                // }
+
+                // const add=(a,b)=>{
+                //     document.write(`Sum = ${a+b}` )
+                // }
+
+                // add(20,14)
+            
+            // 3.Without parameter.
+
+                    // function add(){
+                    //     let a=5
+                    //     let b=3
+                    //     let sum=a+b
+                    //     return sum
+                    // }
+                    // reasult=add()
+                    // document.write(`reasult is ${reasult}<br>`)
+
+                    // const add = ()=>{
+                    //     let a=5
+                    //     let b=3
+                    //     let sum=a+b
+                    //     return sum
+                    // }
+                    // reasult=add()
+                    // document.write(`reasult is ${reasult}<br>`)
+
+            // 4. With parameter ,with return.
+                        
+                        // function add(a,n){
+                        //     return (a+n)
+                        // }
+
+                        // a=add(2,3)
+                        // document.write(a)
+
+                        // const add2=(a,n)=>{
+                        //    return (a+n)                        }
+
+                        // a=add2(2,3)
+                        // document.write(a)
+7;
+
+            // 5. Recursive function - function calls itself inside its body.
+                            const sum=(n)=>{
+                                if (n==1){
+                                    return 1
+                                }
+                                else{
+                                    return n+sum(n-1)
+                                }
+                            }
+
+                            document.write('sum upto 5 = '+sum(5))
+
+    </script>
+</body>
+</html>
